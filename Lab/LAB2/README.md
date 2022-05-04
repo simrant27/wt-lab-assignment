@@ -5,9 +5,9 @@
 ![border](border.png)
 
 #### Button
--<span>:The span tag is just like a div, which is used to group similar content so it can all be styled together.
+-span:The span tag is just like a div, which is used to group similar content so it can all be styled together.
 
--<a> tag:The <a> tag defines a hyperlink, which is used to link from one page to another.
+-a tag:The <a> tag defines a hyperlink, which is used to link from one page to another.
 
 -class:The class selector selects HTML elements with a specific class attribute. To select elements with a specific class, write a period (.)
 
@@ -22,4 +22,7 @@
     -hover:The :hover selector is used to select elements when you mouse over them.
 
 -border:The CSS border properties allow you to specify the style, width, and color of an element's border.The border-style property specifies what kind of border to display.
-    
+
+-background-color:The background-color property sets the background color of an element.
+
+-border-color:The border-color property sets the color of an element's four borders.
