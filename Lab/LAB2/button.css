@@ -1,0 +1,203 @@
+body {
+   text-align: center; 
+}
+h1{
+    color: rgb(79,80,83);
+}
+div {
+    margin: -20px;
+}
+span{
+    font-size: 1.1em;
+}
+
+.btn{
+    text-decoration: none;
+   border: solid 2px;
+   margin: 20px;
+   padding:8px 29px;
+   border-radius: 5px;
+   
+}
+
+.btn-symbol {
+    text-decoration: none;
+    border: solid 2px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border-color: rgb(38,190,150);
+    background-color: rgb(38,190,150);
+    margin: 20px;
+    margin-left: 35px;
+    color: rgb(255,255,255);
+   
+}
+.btn-primary {
+    border-color: rgb(38,190,150);
+    background-color: rgb(38,190,150);
+    color: rgb(255,255,255);
+
+}
+.btn-secondary {
+    border-color: rgb(211,222,225);
+    background-color:rgb(229,235,237) ;
+    color :rgb(110,145,156);
+}
+.btn-destructive {
+    border-color:rgb(238,131,99);
+    background-color:rgb(238,131,99);
+    color :rgb(253,239,235);
+}
+.btn-symbol:hover{
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(27,154,131) ;
+    
+}
+.btn-primary:hover{
+    border-bottom-width: 3px;
+    border-bottom-color:rgb(27,154,131) ;
+    color: rgb(222,245,239);
+    
+}
+.btn-secondary:hover{
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(157,181,188);
+    color: rgb(87,127,141);
+
+}
+.btn-destructive:hover{
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(190,104,79);
+    color: rgb(251,228,221);
+
+}
+.btn-symbol:active{
+    background-color: rgb(103,210,182);
+    border-color: rgb(103,210,182);
+    color:rgb(237,250,246) ;
+}
+.btn-primary:active{
+     background-color: rgb(103,210,182);
+    border-color: rgb(103,210,182);
+   
+    color:rgb(236,250,246) ;
+}
+.btn-secondary:active{ 
+    background-color:rgb(237,241,243);
+    border-color: rgb(237,241,243);
+    color:rgb(153,178,186) ;
+}
+.btn-destructive:active{ 
+    background-color:rgb(244,168,146);
+    border-color: rgb(244,168,146);
+    color:rgb(252,233,227) ;
+}
+div {
+    padding: 30px;
+}
+
+
+.btn1-symbol{
+    text-decoration: none;
+    border: solid 2px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border-color: rgb(169,229,213);
+    background-color: rgb(169,229,213);
+    margin-left: 30px;
+    margin: 20px;
+    color: rgb(255,255,255);
+    cursor: not-allowed;
+
+}
+.btn1-primary {
+    border-radius:5px;
+    border-color: rgb(169,229,213);
+    background-color: rgb(169,229,213);
+    color: rgb(255,255,255);
+    cursor: not-allowed;
+}
+.btn1-secondary {
+    border-radius:5px;
+    border-color: rgb(245,247,248);
+    background-color:rgb(245,247,248) ;
+    color :rgb(196,210,215);
+    cursor: not-allowed;
+}
+
+.btn1-destructive{
+    border-radius:5px;
+    border-color:rgb(249,206,193);
+    background-color:rgb(249,206,193);
+    color :rgb(254,245,242);
+    cursor: not-allowed;
+}
+.name {
+    color: rgb(194,209,214);
+}
+
+.btn2-primary{
+    margin-left: 110px;
+   background-color:rgb(255,255,255) ; 
+   border-color: rgb(95,206,177) ;
+   color: rgb(80,202,171);
+}
+.btn2-secondary{
+    background-color: rgb(255,255,255);
+    border-color: rgb(206,218,222);
+    color: rgb(97,136,148);
+}
+.btn2-destructive{
+    background-color: rgb(255,255,255);
+    border-color: rgb(244,177,157) ;
+    color: rgb(240,148,120);
+}
+.btn2-primary:hover {
+    border-width: 3px;
+    border-color: rgb(80,202,170) ;
+    color: rgb(43,191,153);
+}
+.btn2-secondary:hover{
+    border-width: 3px;
+    border-color: rgb(138,166,175);
+    color: rgb(142,170,179);
+}
+.btn2-destructive:hover{
+    border-width: 3px;
+    border-color: rgb(239,142,113);
+    color: rgb(241,151,124);
+}
+.btn2-primary:active{
+    background-color:rgb(103,210,182) ;
+    border-color: rgb(103,210,182);
+    color:rgb(236,249,246) ;
+}
+.btn2-secondary:active{
+    background-color:rgb(237,241,243) ;
+    border-color: rgb(219,227,230);
+    color: rgb(155,179,187);
+}
+.btn2-destructive:active{
+    background-color: rgb(244,168,146);
+    border-color: rgb(244,168,146);
+    color: rgb(254,245,242);
+}
+.btn3-primary{
+    margin-left: 100px;
+    background-color:rgb(255,255,255) ;
+    border-color: rgb(191,236,224);
+    color:rgb(181,233,219) ;
+    cursor: not-allowed;
+}
+.btn3-secondary{
+    background-color:rgb(255,255,255) ;
+    border-color: rgb(235,240,241);
+    color:rgb(198,212,217) ;
+    cursor: not-allowed;
+}
+.btn3-destructive{
+    background-color:rgb(255,255,255) ;
+    border-color:rgb(250,216,206) ;
+    color:rgb(247,198,183) ;
+    cursor: not-allowed;
+}
