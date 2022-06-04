@@ -7,6 +7,7 @@
 [Lab 1](https://github.com/simrant27/wt-lab-assignment/tree/master/Lab/Lab%201)
 [Lab 2](https://github.com/simrant27/wt-lab-assignment/tree/master/Lab/LAB2)
 [Lab 3](https://github.com/simrant27/wt-lab-assignment/tree/master/Lab/Lab3)
+[Lab 4](https://github.com/simrant27/wt-lab-assignment/tree/master/Lab/Lab4)
 
 ## website link
 [website](https://simrantamang.com.np/)
