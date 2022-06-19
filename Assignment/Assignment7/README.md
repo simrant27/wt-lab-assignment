@@ -34,7 +34,7 @@
    ```
  > then save
 
- >Then open C:\Windows\System32\drivers\etc\hosts in notepad 
+>Then open C:\Windows\System32\drivers\etc\hosts in notepad 
  >add 127.0.01 name.local
  >then you are ready to go:search localhost/location of your directory
 
