@@ -101,28 +101,7 @@ $result = $conn->query($sql);
 </table>
 
 <script type="text/javascript">
-	const deleteEl = document.querySelectorAll(".delete");
-	for(el of deleteEl) {
-		el.addEventListener("click", deleteStudent);
-	}
-	function deleteStudent(event)
-	{
-		const id = event.target.getAttribute('data-id');
-		let formEl = document.createElement("form");
-		formEl.setAttribute("method", "POST");
-		formEl.setAttribute("action", "./action/delete.php");
-		let idEl = document.createElement("input");
-		idEl.setAttribute("type", "hidden");
-		idEl.setAttribute("name", "id");
-		idEl.setAttribute("value", id);
-		formEl.appendChild(idEl);
-		document.body.appendChild(formEl);
-		formEl.submit();
-	}
-</script>
-</body>
-</html>
-<!-- 
+	
 
 const updateEl = document.querySelectorAll(".edit");
         for (el of updateEl) {
@@ -141,4 +120,43 @@ const updateEl = document.querySelectorAll(".edit");
             formEl.appendChild(idEl);
             document.body.appendChild(formEl);
             formEl.submit();
-        } -->
+        }
+	const deleteEl = document.querySelectorAll(".delete");
+	for(el of deleteEl) {
+		el.addEventListener("click", deleteStudent);
+	}
+	for (el of updateEl) {
+            el.addEventListener("click", editStudent);
+        }
+
+        function editStudent(event) {
+            const id = event.target.getAttribute('data-id');
+            let formEl = document.createElement("form");
+            formEl.setAttribute("method", "POST");
+            formEl.setAttribute("action", "./Edit/");
+            let idEl = document.createElement("input");
+            idEl.setAttribute("type", "hidden");
+            idEl.setAttribute("name", "id");
+            idEl.setAttribute("value", id);
+            formEl.appendChild(idEl);
+            document.body.appendChild(formEl);
+            formEl.submit();
+        }
+	function deleteStudent(event)
+	{
+		const id = event.target.getAttribute('data-id');
+		let formEl = document.createElement("form");
+		formEl.setAttribute("method", "POST");
+		formEl.setAttribute("action", "./action/delete.php");
+		let idEl = document.createElement("input");
+		idEl.setAttribute("type", "hidden");
+		idEl.setAttribute("name", "id");
+		idEl.setAttribute("value", id);
+		formEl.appendChild(idEl);
+		document.body.appendChild(formEl);
+		formEl.submit();
+	}
+</script>
+</body>
+</html>
+
