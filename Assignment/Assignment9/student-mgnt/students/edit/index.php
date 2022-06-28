@@ -1,3 +1,24 @@
+<?php
+require_once "../../utils/db.php";
+if (!isset($_GET['id'])) {
+	header("location:../?error=invalid id");
+}
+$id = $_GET['id'];
+
+$sql = "SELECT * FROM students WHERE id=$id";
+
+
+
+$result = $conn->query($sql);
+
+if ($result->num_rows < 1) {
+	header("location:../");
+}
+
+$student = $result->fetch_assoc();
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,22 +32,18 @@
 	</style>
 </head>
 <body>
-<form method="POST" action="../save/" enctype="multipart/form-data">
+<form method="POST" action="../action/update.php" enctype="multipart/form-data">
 	<div class="form-group">
 		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Enter your name" name="name">
+		<input type="text" id="name" placeholder="Nishal Gurung" name="name" value="<?= $student['name'] ?>">
 	</div>
 	<div class="form-group">
 		<label for="email">Email</label>
-		<input type="email" id="email" placeholder="enter email address" name="email">
-	</div>
-	<div class="form-group">
-		<label for="password">Password</label>
-		<input type="password" id="password" placeholder="********" name="password">
+		<input type="email" id="email" placeholder="nishal.gurung4@gmail.com" name="email" value="<?= $student['email'] ?>">
 	</div>
 	<div class="form-group">
 		<label for="dob">D.O.B.</label>
-		<input type="date" id="dob" name="dob">
+		<input type="date" id="dob" name="dob" value="<?= $student['dob'] ?>">
 	</div>
 	<div class="form-group">
 		<label for="favorite-color">Favorite Color</label>
@@ -40,13 +57,14 @@
 		<label>Gender</label>
 		<div>
 			<label for="male">Male</label>
-			<input type="radio" id="male" name="gender" value="male">
+			<input type="radio" id="male" name="gender" value="male" <?php if($student['gender'] == "male") echo "checked" ?>>
 			<label for="female">Female</label>
-			<input type="radio" id="female" name="gender" value="female">
+			<input type="radio" id="female" name="gender" value="female" <?php if($student['gender'] == "female") echo "checked" ?>>
 			<label for="other">Other</label>
-			<input type="radio" id="other" name="gender" value="other">
+			<input type="radio" id="other" name="gender" value="other" <?php if($student['gender'] == "other") echo "checked" ?>>
 		</div>
 	</div>
+
 	<div class="form-group">
 		<label>Hobbies</label>
 		<input type="checkbox" id="traveling" name="hobbies[]" value="traveling" />
@@ -55,6 +73,7 @@
 		<input type="checkbox" id="singing" value="singing" name="hobbies[]" />
 		<label for="singing">Singing</label>
 	</div>
+
 	<div class="form-group">
 		<label for="nationality">Nationality</label>
 		<select id="nationality" name="nationality">
@@ -64,12 +83,13 @@
 			<option value="UK">United Kingdom</option>
 		</select>
 	</div>
+
 	<div class="form-group">
 		<label for="profile">Profile</label>
 		<input type="file" id="profile" accept="image/png,image/jpeg" name="profile" />
 	</div>
 	<div class="form-group">
-		<input type="submit" value="Create" />
+		<input type="submit" value="Update" />
 		<input type="reset" value="Cancel" />
 	</div>
 </form>
